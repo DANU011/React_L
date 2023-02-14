@@ -1,0 +1,84 @@
+.header {
+     width: 100vw;
+     height: 10vh;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     background-color: #6750A4;
+     color: white;
+ }
+ 
+ .main { 
+     width: 100vw;
+     height: 90vh;
+     display: flex;
+     justify-content: center;
+     align-items: top;
+ }
+ 
+ .mainbox1, .mainbox2 {
+     height: 90vh;
+     display: flex;
+     margin-top: 20px;
+ }
+ 
+ .mainbox1 {
+     width: 30vw;
+     flex-direction: column;
+     justify-content: top;
+     align-items: center;
+ }
+ 
+ .mainbox2 {
+     width: 50vw;
+     justify-content: center;
+     align-items: top;
+ }
+ 
+ .dtdiv1 {
+     display: flex;
+     width: 30vw;
+     height: 8vh;
+     border: none;
+     border-radius: 10px;
+     justify-content: center;
+     align-items: center;
+     margin: 10px;
+     background-color: #EADDFF;
+     color: rgb(31, 7, 43);
+     font-size: 18px;
+ }
+ 
+ .dtdiv1:hover, .dtdiv1:active {
+     background-color: #625B71;
+     color: white;
+     font-size: 22px;
+ }
+ 
+ .detail {
+     width: 80%;
+     height: 80%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     border: 1px solid #D0BCFF;
+     border-radius: 10px;
+     background-color: white;
+     padding: 10px;
+     color: #4F378B;
+ }
+ 
+ .list {
+     list-style-type: square;
+ }
+ 
+ @keyframes blink-effect {
+     50% {
+       opacity: 0;
+     }
+   }
+ 
+ .lired {
+     color: brown;
+     animation: blink-effect 1.2s step-end infinite;
+ }

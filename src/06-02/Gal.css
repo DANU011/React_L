@@ -1,0 +1,69 @@
+.galm {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center; 
+}
+
+.galc1 {
+  width: 500px;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; 
+}
+
+.galcard {
+  width: 500px;
+  height: 75vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  border-radius: 8px;
+  background-color: rgb(6, 46, 32);
+}
+
+.galtTag, .galtTagSel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  height: auto;
+  border: 1px solid rgb(43, 87, 43);
+  border-radius: 10px;
+  margin: 15px;
+  padding: 15px;
+}
+
+.galtTag:hover, .galtTag:active, .galtTagSel {
+  background-color: rgb(65, 165, 125);
+  color: white;
+  border: none;
+  font-size: large;
+}
+
+.img {
+  width: 100%;
+  height: 35%;
+}
+
+.galTitle {
+  padding: 10px 0px 25px 20px;
+  color: gainsboro;
+  font-size: 2.4em;
+}
+
+.galPhotographyLocation, .galPhotographer {
+  padding: 5px 0px 0px 20px;
+  color:rgb(36, 198, 141); 
+  font-size: 1.4em;
+}
+
+.galPhotographyMonth, .galSearchKeyword {
+  padding: 5px 20px 0px 20px;
+  color: white;
+  font-size: 1em;
+}
+

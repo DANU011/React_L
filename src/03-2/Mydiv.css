@@ -1,0 +1,71 @@
+.content{
+     width: 100vw;
+     height: 100vh;/*가로세로 풀로 다 쓰겠다.*/
+     display: flex;
+     flex-direction: column;/*밑으로 내리려고*/
+     justify-content: center;
+     align-items: center;
+
+}
+.header {
+     width: 100vw;
+     height: 10vh;
+     display: flex;
+     flex-direction: row;/*옆으로*/
+     justify-content: center;
+     align-items: center;
+     background-color: blue;
+     color: white;
+}
+.main{
+     width: 100vw;
+     height: 90vh;
+     display: flex;
+     flex-direction: row;
+     justify-content: center;
+     align-items: top;
+}
+
+.mydiv1,.mydiv2 {
+     display: flex;
+     flex-direction: column;
+     justify-content: top;
+     align-items: center;
+}
+.mydiv1 {
+     width: 30vw;
+     height: 90vh;
+     background-color: azure;
+}
+
+.mydiv2 {
+     width: 70vw;
+     height: 90vh;
+     background-color: white;
+}
+
+.mydiv11, .mydiv21 {
+     width: 80%;
+     border: 1px solid gray;
+     display:  flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     
+}
+
+.mydiv11 > p, .mydiv21 > p {
+     color: blue;
+
+}
+
+.divbt {
+     margin-top: 10px;
+
+}
+.divbt > button, .divbt > span {
+     display: inline-flex;
+     justify-content: center;
+     align-items: center;
+     margin: 10px;
+}
