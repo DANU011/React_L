@@ -1,47 +1,112 @@
-.wheader{
+* {
+     margin: 0px;
+     padding: 0px;
+ }
+ .content {
+     width: 100vw; 
+     height: 100vh;
      display: flex;
-     justify-content: center;
+     flex-direction: column;
+     justify-content: top;
      align-items: center;
+ }
+ 
+ .wheader {
      width: 420px;
      height: 80px;
+ 
+     display: flex;
+     justify-content: center;
+     align-items: center;
+ 
+     background-color:black ;
+     color: white;
+ }
+ .wheader > h1 {
+     width: 80%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+ }
+ .wheader > div {
+     font-size: 2em;
+ }
+ .wmain {
+     width: 420px; 
+     height: 80%;
+     display: flex;
+     
+     flex-direction: column;
+     justify-content: top;
+     
+     align-items: center;
+ }
+ 
+ .wmain > ul {
+     list-style: none;
+     width: 80%;
+     height: 80%;
+ }
+ 
+ .wmain li {
+     width: 80%;
+     height: 30%;
+     margin: 20px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+ 
+     border: 1px solid gainsboro;
+     font-size: 3em;
+ }
+ .wmain li:hover, .wmain li:active {
      background-color: black;
      color: white;
-}
-
-.content {
-     display: flex;
-     justify-content: left;
-     align-items: center;
-     flex-direction: column;
-     width: 420px;
-     height: 800px;
-     border: 1px solid black;
-}
-
-.wmian > ul {
-     display: flex;
-     flex-direction: column;
-     align-items: center;
-     justify-content: center;
-     
-}
-
-.wmian > ul > li {
-     /* display: flex;
-     width: 200px;
-     height: 100px;
-     list-style: none;
-     border: 1px black; */
-     width: 200px;
-     height: 100px;
-     display: flex;
-     flex-direction: column;
-     justify-content: center;
-     align-items: center;
-     list-style: none; 
-     border: solid 1px ;
-     border-radius: 8px;
-     margin: 20px;
-     font-size: xx-large;
-}
+ }
  
+ a, a:visited {
+     text-decoration: none; 
+     color: black;
+ }
+  
+ a:hover, a:active {
+     background-color: black;
+     color: white;
+ }
+ 
+ .w2div {
+     width: 420px; 
+     height: 50px;
+ 
+     display: flex;
+     justify-content: center;
+     align-items: center;
+ 
+     border-bottom: 1px solid gainsboro;
+ }
+ 
+ .sp0, .sp1, .sp2 {
+     height: 100%;
+     display: inline-flex;
+     align-items: center;
+     font-size: 1em;
+ }
+ 
+ .sp0 {
+     width : 30% ;
+     justify-content: right;
+     color: gray;
+     font-weight: bold;
+ }
+ 
+ .sp1 {
+     width : 20% ; 
+     justify-content: center;
+     font-weight: bold;
+ 
+ }
+ 
+ .sp2 {
+     width : 20% ; 
+     justify-content: left;
+ }

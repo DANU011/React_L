@@ -1,7 +1,10 @@
 import './App.css';
 //import RouteMain from './09/RouteMain';
 import { BrowserRouter } from 'react-router-dom';
-import Wmain from './10/Wmain';
+//import Async from './11/Async';
+import Boxoffice from './11/Boxoffice';
+//import Wmain from './10/Wmain';
+
 //import { startTransition } from 'react';
 //import GalSelect from './06-1/GalSelect';
 //import Gal from './06-1/Gal';
@@ -15,9 +18,7 @@ import Wmain from './10/Wmain';
 const App = () => {
   //console.log('RouteMain.js');
   return (
-    <BrowserRouter>
-      <Wmain />
-    </BrowserRouter>
+    <Boxoffice />
   );
 }
 

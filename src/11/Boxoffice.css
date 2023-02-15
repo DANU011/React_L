@@ -1,0 +1,42 @@
+* {
+     margin: 0px;
+     padding: 0px;
+}
+
+.mvh {
+     width: 100vh;
+     height: 80px;
+     background-color: black;
+     color: white;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+
+.mvh > h1 {
+     width: 50%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+
+.mvh > form {
+     width: 30%;
+     display: flex;
+     justify-content: center;
+     align-items: left;
+}
+
+/* .mvh input{
+     width: 100px;
+     display: inline-flex;
+     justify-content: left;
+     align-items: left;
+} */
+
+input {
+     width: 82.9%;
+     padding: 12px 20px;
+     margin: 8px 0;
+     box-sizing: border-box;
+   }
