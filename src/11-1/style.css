@@ -1,0 +1,91 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+.mvh {
+  width: 100vw;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(0, 0, 0);
+  color: white;
+}
+
+.mvh > h1, .mvh > form {
+  display: flex;
+  justify-content: center;
+}
+
+.mvh > h1 {
+  width: 70%;
+  align-items: center;
+}
+
+.mvh > form {
+  width: 30%;
+  align-items: left;
+}
+
+input {
+  width: 80%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+
+.mvrow0, .myrow{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.mvlist{
+  display: flex;
+  flex-direction: column;
+  width: 65%;
+
+}
+
+.mycol1, .mvcol1,.mycol2, .mvcol2, .mycol3, .mvcol3 {
+  display: block;
+  height: 50px;
+  border-bottom: 1px solid gray;
+  vertical-align: text-bottom;
+}
+.mycol1 {
+  background-color: gainsboro;
+}
+
+.mycol1, .mvcol1 {
+
+  text-align: center;
+  
+  width: 10%;
+
+}
+
+.mvcol2{
+  text-align: center;
+}
+
+
+.mycol2, .mvcol2 {
+
+  width: 70%;
+  margin: 0px 10px;
+
+}
+
+.mycol3, .mvcol3 {
+
+  text-align: center;
+  width: 10%;
+  
+
+}
+
+
+
+

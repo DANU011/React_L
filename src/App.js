@@ -2,7 +2,7 @@ import './App.css';
 //import RouteMain from './09/RouteMain';
 import { BrowserRouter } from 'react-router-dom';
 //import Async from './11/Async';
-import Boxoffice from './11/Boxoffice';
+import Boxoffice from './11-1/Boxoffice';
 //import Wmain from './10/Wmain';
 
 //import { startTransition } from 'react';
