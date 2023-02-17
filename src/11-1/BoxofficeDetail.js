@@ -1,53 +1,65 @@
 import { useState, useEffect } from "react";
 
-const BoxofficeDetail = ({ mvcd }) => {
+const BoxofficeDetail = ({mvcd}) => {
 
-     const [mtag, setMtag] = useState();
+    const [mTag, setMTag] = useState() ;   
+    const getData = async() => {
+        let url = 'http://www.kobis.or.kr/kobisopenapi/webservice/rest/movie/searchMovieInfo.json?key=f5eef3421c602c6cb7ea224104795888&'
+        url = url + `movieCd=${mvcd}`;
+        
+        try {
+            const resp = await fetch(url) ;
+            const data = await resp.json() ;
 
-     const getData = async() => {
-          let url = `http://www.kobis.or.kr/kobisopenapi/webservice/rest/movie/searchMovieInfo.json?key=f5eef3421c602c6cb7ea224104795888&`
-          url = url + `movieCd=${mvcd}`;
+            console.log("url", url)
+            //object
+            let temp = data.movieInfoResult.movieInfo ;
+            const showitem = {
+                "영화명" : "movieNm",
+                "개봉일" : "openDt" ,
+                "제작상태" : "prdtStatNm",
+                "영화구분" : "typeNm",
+                "감독" : "directors"
+            }
+    
+            if (mvcd) {
+                let tag = [] 
+                for(let [k, v] of Object.entries(showitem)) {
+                    if ( k === "감독") {
+                        tag.push(<div className="dtdiv" key={k}>
+                            <span className="dtsp1">{k}</span>
+                            <span className="dtsp2">{temp[v][0].peopleNm}</span>
+                        </div>)
+                    }
+                    else {
+                        tag.push(<div className="dtdiv" key={k}>
+                            <span className="dtsp1">{k}</span>
+                            <span className="dtsp2">{temp[v]}</span>
+                        </div>)
+                    }
+                    //console.log("tag", k, selmv[v])
+                };
+                setMTag(tag);
+            }
+        }
+        catch(err) {
+            console.log(err)
+        }
+        
+    }
 
-          try {
-               const resp = await fetch(url);
-               const data = await resp.json();
+    useEffect(() =>{
+        getData();
+        console.log("mvcd", mvcd)
+    }, [mvcd]);
 
-               //object
-               let temp = data.movieInforResult.movieInfo;
-               
-               let keys = { 'movieNm': '영화명', 'directors': '감독' }
-               
-               let t;
-               for (let [k, v] of Object.entries(keys)) {
-                  if (k==='directors'){
-                    t=t+<li>{v} {temp[k]}</li>
-                  }
-               }
-               setMtag(t);
-
-
-               temp.map((i) => console.log(i))
-
-
-
-               // temp = Object.entries(temp).map((item)=>{
-               // })
-
-               console.log(data)
-          }
-          catch (err) {
-               console.log(err)
-          }
-     }
-
-     useEffect(() => {
-          getData();
-     }, [mvcd]);
-     return (
-          <div className="mvdtail">
-            <ul>{mtag}</ul>   
-          </div>
-     );
+    return (
+        <>
+   
+        {mvcd && mTag}
+  
+        </>
+    )
 }
 
 export default BoxofficeDetail;

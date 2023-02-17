@@ -1,42 +1,43 @@
-import { useState, useEffect, useRef } from "react";
-import './style.css' ;
+import { useState, useEffect , useRef} from "react";
 import BoxofficeList from "./BoxofficeList";
+import './style.css' ;
 
 const Boxoffice = () => {
-    //상영일 선택 state 변수
+    //상영일 선택 state변수
     const [targetDt, setTargetDt] = useState() ;
 
     //input 제어
-    const mvdR = useRef() ;
+    const mvdr = useRef() ;
 
     //처음 랜더링
-    useEffect(()=>{
-        mvdR.current.focus() ;
-    },[]) ;
+    useEffect(() =>{
+        mvdr.current.focus() ;
+    }, []);
 
-    //targetDt 변경시
-    useEffect(()=>{
-        
-    }, [targetDt])
+    //targetDt변경시 
+    useEffect(() => {
+        //console.log("targetDt" , targetDt)
+    }, [targetDt]) ;
 
     //input 이벤트
-    const handleMV = () => {
-        setTargetDt(mvdR.current.value.replaceAll('-','')) ;
+    const handleMv = () => {
+        //console.log(mvdr.current.value)
+        setTargetDt(mvdr.current.value.replaceAll('-','')) ;
     }
 
-    return (
+    return(
         <>
             <div className="mvh">
                 <h1>박스오피스</h1>
                 <form>
-                    <input ref={mvdR} type="date" name="mvd" onChange={handleMV} />
+                    <input type="date" name="mvd" ref={mvdr} onChange={handleMv} />
                 </form>
             </div>
             <div className="mvmain">
-                {targetDt && <BoxofficeList targetDt={targetDt} />}
+                {targetDt && <BoxofficeList tDt={targetDt}/>}
             </div>
         </>
-    ) ;
+    );
 }
 
-export default Boxoffice ;
+export default Boxoffice;

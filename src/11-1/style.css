@@ -2,90 +2,130 @@
   margin: 0px;
   padding: 0px;
 }
-
 .mvh {
   width: 100vw;
   height: 80px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: rgb(0, 0, 0);
+
+  background-color: black;
   color: white;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.mvh > h1, .mvh > form {
+.mvh > h1, .mvh > form { 
   display: flex;
   justify-content: center;
 }
 
-.mvh > h1 {
-  width: 70%;
+.mvh > h1{
+  width: 70%;  
   align-items: center;
 }
 
-.mvh > form {
-  width: 30%;
+.mvh > form { 
+  width: 30%;  
   align-items: left;
 }
 
-input {
+input  {
   width: 80%;
   padding: 12px 20px;
   margin: 8px 0;
   box-sizing: border-box;
 }
 
-.mvrow0, .myrow{
+.mvcontent {
+  width: 100%; 
   display: flex;
-  flex-direction: row;
   justify-content: center;
+  align-items: top;  
 }
 
-.mvlist{
+.mvlist, .mvdetail, .mvrow  {
   display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mvdetail {
+  flex-direction: column;  
+  width: 100%;
+  padding: 10px; 
+  justify-content: center;
+  align-items:top;
+  height: 100%;
+  margin: 50px 0px; 
+  border: 1px solid gray;
+  background-color:aliceblue;
+}
+.dtdiv {
+  width: 100%;
+  margin: 10px 0px;
+}
+
+.dtsp1 {
+  width: 30%;
+  display: inline-flex; 
+  font-weight: bold;
+  color: gray;
+  justify-content: right;
+}
+
+.dtsp2 {
+  width: 70%;
+  display: inline-flex;  
+  color: blue; 
+}
+.mvlist {
+  width: 60%;
+  margin: 10px 0px;
   flex-direction: column;
-  width: 65%;
-
 }
 
-.mycol1, .mvcol1,.mycol2, .mvcol2, .mycol3, .mvcol3 {
-  display: block;
-  height: 50px;
-  border-bottom: 1px solid gray;
-  vertical-align: text-bottom;
+.mvrow, .mvrow0 {
+  width: 90%;
+  height: 40px;
+  border-bottom: 1px solid gainsboro;
+  justify-content: center;
+  align-items: center;
 }
-.mycol1 {
+
+.mvrow:hover, .mvrow:active {
   background-color: gainsboro;
 }
 
-.mycol1, .mvcol1 {
-
-  text-align: center;
-  
-  width: 10%;
-
+.mvrow0 {
+  background-color:gainsboro;
 }
 
-.mvcol2{
-  text-align: center;
+.mvrow0 > span {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
 }
 
-
-.mycol2, .mvcol2 {
-
-  width: 70%;
-  margin: 0px 10px;
-
+.mvcol1, .mvcol2, .mvcol3 {
+  display: inline-flex;
 }
 
-.mycol3, .mvcol3 {
-
-  text-align: center;
-  width: 10%;
-  
-
+.mvcol1 {
+  width : 15% ;
+  justify-content: center;
 }
 
+.mvcol2 {
+  width : 65% ;
+}
 
+.mvcol3 {
+  width : 20% ;
+  justify-content: center;
+}
 
-
+.mvdetail {
+  width: 30%;
+  margin-top: 10px;
+}
