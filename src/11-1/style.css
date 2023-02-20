@@ -58,7 +58,7 @@ input  {
   height: 100%;
   margin: 50px 0px; 
   border: 1px solid gray;
-  background-color:aliceblue;
+  background-color:rgb(245, 246, 247);
 }
 .dtdiv {
   width: 100%;
@@ -70,13 +70,14 @@ input  {
   display: inline-flex; 
   font-weight: bold;
   color: gray;
-  justify-content: right;
+  justify-content: left;
 }
 
 .dtsp2 {
   width: 70%;
   display: inline-flex;  
-  color: blue; 
+  color: rgb(5, 5, 5); 
+  font-weight: bolder;
 }
 .mvlist {
   width: 60%;
