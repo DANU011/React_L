@@ -36,4 +36,4 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
  + 06-2 : https://gal-bs.web.app
 #### React Project_7 : Mycom (useRef, useState 비교) v9.0
 #### React Project_8 : Boxoffice_11-1
- + https://boxoffice-1ad58.web.app
+ + 11-1 : https://boxoffice-1ad58.web.app
