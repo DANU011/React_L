@@ -35,5 +35,5 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 #### React Project_6, React Project_6-2 : Gal 실습 예제 v7.5, v8.0 
  + 06-2 : https://gal-bs.web.app
 #### React Project_7 : Mycom (useRef, useState 비교) v9.0
-#### React Project_8 : Boxoffice_11-1
+#### React Project_8 : Boxoffice_11-1 v230221
  + 11-1 : https://boxoffice-1ad58.web.app
